@@ -6,6 +6,7 @@ import com.example.myparking.R
 
 class MainActivity : AppCompatActivity() {
     val g =10
+    val a = 10
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
