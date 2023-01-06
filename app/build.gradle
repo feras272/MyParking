@@ -6,11 +6,20 @@ plugins {
     id 'kotlin-kapt'
 //    id 'com.android.application'
     id 'kotlin-android'
+    id 'com.google.gms.google-services' // Firebase services
+    id "androidx.navigation.safeargs" // android navigation
 //    id 'kotlin-android-extensions' (no longer supported)
 //    id 'dagger.hilt.android.plugin' (need to implement)
     //id 'com.google.gms.google-services' (commented after adding in project gradle)
 //    id 'org.jetbrains.kotlin.android'
 //    id 'com.google.dagger.hilt.android' (mentioned in google guid)
+
+    /**
+     1) id 'com.android.application'
+     2) id 'org.jetbrains.kotlin.android'
+     // Firebase services
+     3) id 'com.google.gms.google-services'
+     */
 }
 
 //apply plugin: 'com.android.application'
@@ -41,6 +50,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    // ViewBinding
+    buildFeatures {
+        viewBinding = true
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -56,6 +71,10 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.7.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-firestore-ktx:24.4.0'
+    // need to implement firebase-auth-ktx
+    // need to implement firebase-database-ktx
+//    implementation 'com.google.firebase:firebase-firestore-ktx:24.4.0' (newer version)
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
@@ -63,7 +82,7 @@ dependencies {
 
 
     // Material Design
-    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'com.google.android.material:material:1.7.0' // implemented above
 
     def lifecycle_version = "2.5.1"
     //def arch_version = "2.1.0"
@@ -116,6 +135,23 @@ dependencies {
 
     // Timber
     implementation 'com.jakewharton.timber:timber:5.0.1'
+
+    // need to implement firebase-auth-ktx
+
+
+    // need to implement firebase-database-ktx
+
+
+    // Firebase Firestore
+
+
+    // Firebase Storage KTX
+
+
+    // Firebase Coroutines
+
+
+    // ExpoPlayer - stream song from our remote url
 
 }
 
