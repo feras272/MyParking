@@ -1,13 +1,11 @@
-package com.example.myparking.ui
+package com.example.myparking.ui.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import com.example.myparking.MainActivity
 import com.example.myparking.R
-import com.example.myparking.Singup
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,7 +21,7 @@ class SplashActivity : AppCompatActivity() {
                 finish()
 
             //} else {
-                val intent = Intent(this, Singup::class.java)
+                val intent = Intent(this, SignupActivity::class.java)
                 startActivity(intent)
                 finish()
             //}

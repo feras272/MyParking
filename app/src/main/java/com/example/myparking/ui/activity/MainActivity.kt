@@ -1,7 +1,8 @@
-package com.example.myparking
+package com.example.myparking.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.myparking.R
 
 class MainActivity : AppCompatActivity() {
     val g =10
