@@ -72,6 +72,7 @@ dependencies {
     implementation 'com.google.android.material:material:1.7.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'com.google.firebase:firebase-firestore-ktx:24.4.0'
+    implementation 'com.google.firebase:firebase-database-ktx:20.1.0'
     // need to implement firebase-auth-ktx
     // need to implement firebase-database-ktx
 //    implementation 'com.google.firebase:firebase-firestore-ktx:24.4.0' (newer version)
